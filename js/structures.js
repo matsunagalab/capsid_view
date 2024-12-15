@@ -29,3 +29,5 @@ const structures = [
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btq.molj', 
     },
 ];
+
+export {structures};

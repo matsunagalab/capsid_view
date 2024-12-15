@@ -32,35 +32,32 @@ function createGridItem(structure, size) {
     `;
 }
 
-// Molstarビューアのオプション
-const viewerOptions = {
-    layoutIsExpanded: false,
-    layoutShowControls: false,
-    layoutShowRemoteState: false,
-    layoutShowSequence: false,
-    layoutShowLog: false,
-    layoutShowLeftPanel: false,
-    layoutShowStructureSourceControls: false,
-    viewportShowAnimation: false,
-    viewportShowExpand: false,
-    viewportShowSelectionMode: false,
-    viewportShowTrajectoryControls: false,
-    canvas3d: {
-        antialiasing: true,
-        backgroundColor: { r: 255, g: 255, b: 255, a: 1 }
-    }
-};
-
-// プラグインの状態を追跡
-const viewers = new Map();
-
 // グリッドを更新する関数
-async function updateGrid() {
+async function updateGrid(structures) {
+    const viewers = new Map(); // プラグインの状態を追跡
     const gridContainer = document.getElementById('grid-container');
     const columns = document.getElementById('columns').value;
-    document.getElementById('columns-value').textContent = columns;
-
     const viewerSize = calculateViewerSize(columns);
+    // Molstarビューアのオプション
+    const viewerOptions = {
+        layoutIsExpanded: false,
+        layoutShowControls: false,
+        layoutShowRemoteState: false,
+        layoutShowSequence: false,
+        layoutShowLog: false,
+        layoutShowLeftPanel: false,
+        layoutShowStructureSourceControls: false,
+        viewportShowAnimation: false,
+        viewportShowExpand: false,
+        viewportShowSelectionMode: false,
+        viewportShowTrajectoryControls: false,
+        canvas3d: {
+            antialiasing: true,
+            backgroundColor: { r: 255, g: 255, b: 255, a: 1 }
+        }
+    };
+
+    document.getElementById('columns-value').textContent = columns;
 
     viewers.forEach(viewer => {
         if (viewer && viewer.plugin) {
@@ -112,26 +109,4 @@ async function updateGrid() {
     }
 }
 
-// ウィンドウリサイズ時にグリッドを更新
-let resizeTimeout;
-window.addEventListener('resize', () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(updateGrid, 100);
-});
-
-// スライダーの変更イベントを監視
-document.getElementById('columns').addEventListener('input', updateGrid);
-
-// 初期表示
-document.addEventListener('DOMContentLoaded', () => {
-    updateGrid();
-});
-
-// ページ遷移時にビューアを破棄
-window.addEventListener('beforeunload', () => {
-    viewers.forEach(viewer => {
-        if (viewer && viewer.plugin) {
-            viewer.plugin.dispose();
-        }
-    });
-});
+export {updateGrid};

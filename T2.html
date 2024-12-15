@@ -43,14 +43,14 @@
     <div class="container mx-auto px-4">
         <!-- container クラスを削除し、最小限のマージンを設定 -->
         <!-- Simple controls -->
-        <div class="bg-white p-4 rounded-lg shadow mb-4 flex items-center gap-4">
+        <!-- <div class="bg-white p-4 rounded-lg shadow mb-4 flex items-center gap-4">
             <label for="columns" class="font-medium whitespace-nowrap">Columns:</label>
             <input type="range" id="columns" min="1" max="4" value="3" class="flex-grow">
             <span id="columns-value" class="font-medium">3</span>
-        </div>
+        </div> -->
         
         <!-- Grid container -->
-        <div id="grid-container" class="grid gap-4">
+        <div id="grid-container" class="grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <!-- Grid items will be dynamically inserted here -->
         </div>
     </div>

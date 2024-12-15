@@ -10,7 +10,7 @@ window.addEventListener('resize', () => {
 });
 
 // スライダーの変更イベントを監視
-document.getElementById('columns').addEventListener('input', updateGrid.bind(null, structures));
+// document.getElementById('columns').addEventListener('input', updateGrid.bind(null, structures));
 
 // 初期表示
 document.addEventListener('DOMContentLoaded', () => {

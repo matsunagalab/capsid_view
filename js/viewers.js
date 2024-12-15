@@ -16,7 +16,7 @@ function calculateViewerSize(columns) {
 }
 
 // グリッドアイテムを生成する関数
-function createGridItem(structure, size) {
+function createGridItem(structure) {
     //const molstarUrl = `https://molstar.org/viewer/?pdb=${structure.name}&preset=default&collapse-left-panel=1`;//
     // const molstarUrl = `https://molstar.org/viewer/?mvs-format=mvsj&mvs-url=${structure.mvsj}&collapse-left-panel=1`;    
     const molstarUrl = `https://molstar.org/viewer/?snapshot-url-type=molj&snapshot-url=${structure.snapshot}&collapse-left-panel=1`;    
@@ -27,7 +27,7 @@ function createGridItem(structure, size) {
                     ${structure.name}
                 </a>
             </h2>
-            <div id="${structure.id}" style="width: 100%; height: ${size}px;"></div>
+            <div id="${structure.id}" class="aspect-square" ></div>
         </div>
     `;
 }
@@ -36,8 +36,8 @@ function createGridItem(structure, size) {
 async function updateGrid(structures) {
     const viewers = new Map(); // プラグインの状態を追跡
     const gridContainer = document.getElementById('grid-container');
-    const columns = document.getElementById('columns').value;
-    const viewerSize = calculateViewerSize(columns);
+    // const columns = document.getElementById('columns').value;
+    // const viewerSize = calculateViewerSize(columns);
     // Molstarビューアのオプション
     const viewerOptions = {
         layoutIsExpanded: false,
@@ -57,7 +57,7 @@ async function updateGrid(structures) {
         }
     };
 
-    document.getElementById('columns-value').textContent = columns;
+    // document.getElementById('columns-value').textContent = columns;
 
     viewers.forEach(viewer => {
         if (viewer && viewer.plugin) {
@@ -66,9 +66,9 @@ async function updateGrid(structures) {
     });
     viewers.clear();
 
-    gridContainer.className = `grid gap-4 grid-cols-${columns}`;
+    // gridContainer.className = `grid gap-4 grid-cols-${columns}`;
     gridContainer.innerHTML = structures.map(structure => 
-        createGridItem(structure, viewerSize)
+        createGridItem(structure)
     ).join('');
 
     // molstarビューアを初期化

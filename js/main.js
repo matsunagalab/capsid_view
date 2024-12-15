@@ -4,9 +4,18 @@ import {updateGrid} from './viewers.js';
 
 // ウィンドウリサイズ時にグリッドを更新
 let resizeTimeout;
+// ウィンドウの幅が変わったときのみグリッドを更新
+let lastWindowWidth = window.innerWidth;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(updateGrid(structures), 100);
+    resizeTimeout = setTimeout(() => {
+        const currentWindowWidth = window.innerWidth;
+
+        if (currentWindowWidth !== lastWindowWidth) {
+            lastWindowWidth = currentWindowWidth;
+            updateGrid(structures);
+        }
+    }, 100); // デバウンス
 });
 
 // スライダーの変更イベントを監視

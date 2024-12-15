@@ -1,22 +1,3 @@
-// サイズ計算関数を修正
-function calculateViewerSize(columns) {
-    // ウィンドウの幅から直接計算
-    const windowWidth = window.innerWidth;
-    // 最小マージンのみを考慮（両側2px = 4px）
-    const gap = 16; // gap-4 = 1rem = 16px
-    const padding = 8; // 両側合わせて8px
-    const availableWidth = windowWidth - (padding * columns) - (gap * (columns - 1)) - 4; // 4pxはページマージン
-    const size = Math.floor(availableWidth / columns);
-    
-    // サイズの制限を追加
-    const minSize = 200;
-    const maxSize = 500;
-    return Math.max(minSize, Math.min(size, maxSize));
-}
-
-// structures.js から構造データを読み込む
-
-
 // ビューアのサイズを計算する関数
 function calculateViewerSize(columns) {
     // コンテナの幅から1グリッドの幅を計算

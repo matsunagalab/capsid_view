@@ -83,6 +83,11 @@ async function updateGrid(structures) {
             //         viewer = null;
             //     }
             // }
+            // if (viewer) {
+            //     console.log(`viewer ${structure.id} が存在します`);
+            //     viewer.dispose(); // 古いコンテキストを破棄
+            //     // viewer = null;    // 参照を削除
+            // }            
 
             const viewer = await molstar.Viewer.create(
                 structure.id,

@@ -85,7 +85,7 @@ const structures = [
         name: 'Inner layer of Rice dwarf virus (1uf2)',
         url: 'https://files.rcsb.org/download/1UF2.pdb',
         format: 'pdb',
-        tag: ['T2', 'paper'],
+        tag: ['T2'],
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/1uf2.molj', 
     },
     {

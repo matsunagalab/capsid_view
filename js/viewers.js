@@ -74,6 +74,16 @@ async function updateGrid(structures) {
     // molstarビューアを初期化
     for (const structure of structures) {
         try {
+            // structure.idに対応する要素をもっていたら、そのviewerを削除  
+            // if (viewers.has(structure.id)) {
+            //     console.log(`viewer ${structure.id} is already exist`);
+            //     const viewer = viewers.get(structure.id);
+            //     if (viewer && viewer.plugin) {
+            //         viewer.plugin.dispose();
+            //         viewer = null;
+            //     }
+            // }
+
             const viewer = await molstar.Viewer.create(
                 structure.id,
                 { ...viewerOptions, canvas3d: { ...viewerOptions.canvas3d } }
@@ -109,4 +119,15 @@ async function updateGrid(structures) {
     }
 }
 
-export {updateGrid};
+// 選択したアイテムによってstructuresをフィルタリングする関数
+function filteringStructures(structures, tag) {
+    const filteredStructures = structures.filter(structure =>
+        structure.tag.includes(tag) // tagに基づいてフィルタリング
+    );
+    updateGrid(filteredStructures);
+
+    console.log(`選択されたタグ: ${tag}`);
+    console.log('フィルタリング結果:', filteredStructures);
+}
+
+export {updateGrid, filteringStructures};

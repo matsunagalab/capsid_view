@@ -77,8 +77,7 @@ const structures = [
         name: 'L-A virus (1m1c)',
         url: 'https://files.rcsb.org/download/1M1C.pdb',
         format: 'pdb',
-        tag: ['T2'],
-        tag: ['T1', 'paper'],
+        tag: ['T2', 'paper'],
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/1m1c.molj', 
     },
     {

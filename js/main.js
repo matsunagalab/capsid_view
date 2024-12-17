@@ -1,6 +1,26 @@
 console.log('Loading main.js...');
 import {structures} from './structures.js';
-import {updateGrid} from './viewers.js';
+import {filteringStructures} from './viewers.js';
+
+let selectedTag = 'paper'; // 初期値
+const dropdownItems = document.querySelectorAll('.dropdown-item');
+console.log(dropdownItems);
+// 各ドロップダウン項目にイベントリスナーを追加
+dropdownItems.forEach(item => {
+    item.addEventListener('click', (event) => {
+        event.preventDefault(); // デフォルトの動作を防ぐ
+        selectedTag = item.dataset.value; // data-value属性からタグを取得
+        filteringStructures(structures, selectedTag);
+    });
+});
+
+// スライダーの変更イベントを監視
+// document.getElementById('columns').addEventListener('input', updateGrid.bind(null, structures_set));
+
+// 初期表示
+document.addEventListener('DOMContentLoaded', () => {
+    filteringStructures(structures, selectedTag);
+});
 
 // ウィンドウリサイズ時にグリッドを更新
 let resizeTimeout;
@@ -13,17 +33,9 @@ window.addEventListener('resize', () => {
 
         if (currentWindowWidth !== lastWindowWidth) {
             lastWindowWidth = currentWindowWidth;
-            updateGrid(structures);
+            filteringStructures(structures, selectedTag);
         }
     }, 100); // デバウンス
-});
-
-// スライダーの変更イベントを監視
-// document.getElementById('columns').addEventListener('input', updateGrid.bind(null, structures));
-
-// 初期表示
-document.addEventListener('DOMContentLoaded', () => {
-    updateGrid(structures);
 });
 
 // ページ遷移時にビューアを破棄

@@ -138,6 +138,7 @@ async function updateGrid(structures) {
 
 // 選択したアイテムによってstructuresをフィルタリングする関数
 function filteringStructures(structures, tag) {
+    console.log('フィルタリング関数が呼び出されました:', tag);
     const filteredStructures = structures.filter(structure =>
         structure.tag.includes(tag) // tagに基づいてフィルタリング
     );

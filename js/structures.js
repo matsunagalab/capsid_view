@@ -229,7 +229,7 @@ const structures = [
         name: 'Hepatitis B virus T=3 capsid (6bvn)',
         url: 'https://files.rcsb.org/download/6BVN.pdb',
         format: 'pdb',
-        tag: ['T3'],
+        tag: ['T3, interface'],
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T3/6bvn.molj', 
     },
     {

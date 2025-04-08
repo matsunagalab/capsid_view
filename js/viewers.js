@@ -19,7 +19,13 @@ function calculateViewerSize(columns) {
 function createGridItem(structure) {
     //const molstarUrl = `https://molstar.org/viewer/?pdb=${structure.name}&preset=default&collapse-left-panel=1`;//
     // const molstarUrl = `https://molstar.org/viewer/?mvs-format=mvsj&mvs-url=${structure.mvsj}&collapse-left-panel=1`;    
-    const molstarUrl = `https://molstar.org/viewer/?snapshot-url-type=molj&snapshot-url=${structure.snapshot}&collapse-left-panel=1`;    
+    // structure.snapshotのURL末尾がmoljまたはmolxかを確認
+    const url = new URL(structure.snapshot);
+    const urlType = url.pathname.split('.').pop();
+    if (urlType !== 'molj' && urlType !== 'molx') {
+        throw new Error(`Invalid snapshot URL type: ${urlType}`);
+    }
+    const molstarUrl = `https://molstar.org/viewer/?snapshot-url-type=${urlType}&snapshot-url=${structure.snapshot}&collapse-left-panel=1`;    
     return `
         <div class="bg-white p-4 rounded-lg shadow">
             <h2 class="text-lg font-semibold mb-2">
@@ -98,7 +104,13 @@ async function updateGrid(structures) {
             
             try {
                 // スナップショットを読み込む
-                await viewer.loadSnapshotFromUrl(structure.snapshot, 'molj');
+                // structure.snapshotのURL末尾がmoljまたはmolxかを確認
+                const url = new URL(structure.snapshot);
+                const urlType = url.pathname.split('.').pop();
+                if (urlType !== 'molj' && urlType !== 'molx') {
+                    throw new Error(`Invalid snapshot URL type: ${urlType}`);
+                }
+                await viewer.loadSnapshotFromUrl(structure.snapshot, urlType);
                 // await viewer.loadMvsFromUrl(structure.mvsj, 'mvsj')
             } catch (snapshotError) {
                 console.warn(`Snapshot load failed for ${structure.name}, falling back to default structure:`, snapshotError);

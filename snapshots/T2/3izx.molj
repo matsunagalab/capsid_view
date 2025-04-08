@@ -1,16 +1,16 @@
 {
-  "timestamp": 1744110608982,
+  "timestamp": 1744110848987,
   "version": "4.12.1",
-  "current": "htZM0-ZYSUDVNCYjjHpodQ",
+  "current": "cYBsi6Im4odinfOnHkZ0jA",
   "playback": {
     "isPlaying": false,
     "nextSnapshotDelayInMs": 1500
   },
   "entries": [
     {
-      "timestamp": 1744110608982,
+      "timestamp": 1744110848987,
       "snapshot": {
-        "id": "htZM0-ZYSUDVNCYjjHpodQ",
+        "id": "cYBsi6Im4odinfOnHkZ0jA",
         "data": {
           "tree": {
             "transforms": [
@@ -19,7 +19,7 @@
                 "transformer": "build-in.root",
                 "params": {},
                 "ref": "-=root=-",
-                "version": "0PBw9I6fsBY2-JYgHFAQDA"
+                "version": "xxn0YgK3yfd6CMbDwatWTQ"
               },
               {
                 "parent": "-=root=-",
@@ -27,46 +27,46 @@
                 "params": {
                   "url": {
                     "kind": "url",
-                    "id": "SgALnuoPZajOvD6EoKTiqg",
-                    "url": "https://models.rcsb.org/4BTQ.bcif"
+                    "id": "CNA-fZxwtgJZQ64Dmt1rqQ",
+                    "url": "https://models.rcsb.org/3IZX.bcif"
                   },
-                  "label": "RCSB PDB: 4btq (bcif)",
+                  "label": "RCSB PDB: 3izx (bcif)",
                   "isBinary": true
                 },
                 "state": {
                   "isGhost": true
                 },
-                "ref": "BUSwxb_Ww1IwWAJBPxDFiQ",
-                "version": "B1GachFEkho9GvX5yKEo9g"
+                "ref": "rxMEMeG8mQ7KoGt3kDYiiw",
+                "version": "4eLox7XZN0W1QZeNXqNvvw"
               },
               {
-                "parent": "BUSwxb_Ww1IwWAJBPxDFiQ",
+                "parent": "rxMEMeG8mQ7KoGt3kDYiiw",
                 "transformer": "ms-plugin.parse-cif",
                 "params": {},
                 "state": {
                   "isGhost": true
                 },
-                "ref": "GiD1sQgBasKgb7t6lhzcpg",
-                "version": "_GHWgLEeBN4TYuf6fd45_A"
+                "ref": "6lw7yydXLLOQcBVzHQjSBw",
+                "version": "w5bJnyGVJzlS7LpPNK3iJA"
               },
               {
-                "parent": "GiD1sQgBasKgb7t6lhzcpg",
+                "parent": "6lw7yydXLLOQcBVzHQjSBw",
                 "transformer": "ms-plugin.trajectory-from-mmcif",
                 "params": {},
-                "ref": "YT9V6dxAWUoM6pDbzu5rSg",
-                "version": "b1RaAl8WdUnIFxqdQJl4Fw"
+                "ref": "RlaCy7rwzx137DUVi8eS5w",
+                "version": "L_zNsYDrBaDbur1K6CCy7w"
               },
               {
-                "parent": "YT9V6dxAWUoM6pDbzu5rSg",
+                "parent": "RlaCy7rwzx137DUVi8eS5w",
                 "transformer": "ms-plugin.model-from-trajectory",
                 "params": {
                   "modelIndex": 0
                 },
-                "ref": "BqKqpF9mKgy913gEgU4CbQ",
-                "version": "atXMgOL4_va3AxT2NidLvg"
+                "ref": "9r12OtH6Yl1hzbYFlQ-DyQ",
+                "version": "zH32FGGEmcqEMYhNT5GgIg"
               },
               {
-                "parent": "BqKqpF9mKgy913gEgU4CbQ",
+                "parent": "9r12OtH6Yl1hzbYFlQ-DyQ",
                 "transformer": "ms-plugin.custom-model-properties",
                 "params": {
                   "autoAttach": [],
@@ -93,11 +93,11 @@
                     }
                   }
                 },
-                "ref": "kmP6dwPXEkg2s8hs9Ng_gg",
-                "version": "ciyyAXACEVNJ605P0R6TxA"
+                "ref": "u7ldwsJyJ4ZAXnfXG-BuMg",
+                "version": "dV4KZtMBh6mcepjF5JhJTg"
               },
               {
-                "parent": "kmP6dwPXEkg2s8hs9Ng_gg",
+                "parent": "u7ldwsJyJ4ZAXnfXG-BuMg",
                 "transformer": "ms-plugin.structure-from-model",
                 "params": {
                   "type": {
@@ -108,11 +108,11 @@
                     }
                   }
                 },
-                "ref": "w3k_QNichFWnau7mLoKuUg",
-                "version": "d6RMtApoAO_BXii_BvIabg"
+                "ref": "dKwo5XZJqG9UCf0DBu46PQ",
+                "version": "AifaG9fy5DZKfWJVaiu5Fg"
               },
               {
-                "parent": "w3k_QNichFWnau7mLoKuUg",
+                "parent": "dKwo5XZJqG9UCf0DBu46PQ",
                 "transformer": "ms-plugin.custom-structure-properties",
                 "params": {
                   "autoAttach": [],
@@ -216,28 +216,174 @@
                     }
                   }
                 },
-                "ref": "f6kxWKZ9K5XXCgsNdIR7ng",
-                "version": "dLmre5FUx7TOg8MNlru0jg"
+                "ref": "7HYbb9fSj1byHWwqfLhpLQ",
+                "version": "Sbca4jN6PcZOhIkoJb8RQA"
               },
               {
-                "parent": "f6kxWKZ9K5XXCgsNdIR7ng",
+                "parent": "7HYbb9fSj1byHWwqfLhpLQ",
                 "transformer": "ms-plugin.structure-component",
                 "params": {
                   "type": {
-                    "name": "static",
-                    "params": "polymer"
+                    "name": "bundle",
+                    "params": {
+                      "hash": 329523392,
+                      "elements": [
+                        {
+                          "groupedUnits": [
+                            [
+                              1,
+                              6,
+                              11,
+                              16,
+                              21,
+                              26,
+                              31,
+                              36,
+                              41,
+                              46,
+                              51,
+                              56,
+                              61,
+                              66,
+                              71,
+                              76,
+                              81,
+                              86,
+                              91,
+                              96,
+                              101,
+                              106,
+                              111,
+                              116,
+                              121,
+                              126,
+                              131,
+                              136,
+                              141,
+                              146,
+                              151,
+                              156,
+                              161,
+                              166,
+                              171,
+                              176,
+                              181,
+                              186,
+                              191,
+                              196,
+                              201,
+                              206,
+                              211,
+                              216,
+                              221,
+                              226,
+                              231,
+                              236,
+                              241,
+                              246,
+                              251,
+                              256,
+                              261,
+                              266,
+                              271,
+                              276,
+                              281,
+                              286,
+                              291,
+                              296
+                            ]
+                          ],
+                          "set": [],
+                          "ranges": [
+                            0,
+                            9396
+                          ]
+                        },
+                        {
+                          "groupedUnits": [
+                            [
+                              2,
+                              7,
+                              12,
+                              17,
+                              22,
+                              27,
+                              32,
+                              37,
+                              42,
+                              47,
+                              52,
+                              57,
+                              62,
+                              67,
+                              72,
+                              77,
+                              82,
+                              87,
+                              92,
+                              97,
+                              102,
+                              107,
+                              112,
+                              117,
+                              122,
+                              127,
+                              132,
+                              137,
+                              142,
+                              147,
+                              152,
+                              157,
+                              162,
+                              167,
+                              172,
+                              177,
+                              182,
+                              187,
+                              192,
+                              197,
+                              202,
+                              207,
+                              212,
+                              217,
+                              222,
+                              227,
+                              232,
+                              237,
+                              242,
+                              247,
+                              252,
+                              257,
+                              262,
+                              267,
+                              272,
+                              277,
+                              282,
+                              287,
+                              292,
+                              297
+                            ]
+                          ],
+                          "set": [],
+                          "ranges": [
+                            0,
+                            9843
+                          ]
+                        }
+                      ]
+                    }
                   },
                   "nullIfEmpty": true,
-                  "label": ""
+                  "label": "Polymer"
                 },
                 "tags": [
                   "structure-component-static-polymer"
                 ],
-                "ref": "JI-90p59f_TIC0F9iIhPug",
-                "version": "NWXV42NKv2kmqg7tC7HvEg"
+                "ref": "jon4fNXWTOxDq3nCPIqdLg",
+                "version": "f27r7xFgSuqmsQaLrvooog"
               },
               {
-                "parent": "JI-90p59f_TIC0F9iIhPug",
+                "parent": "jon4fNXWTOxDq3nCPIqdLg",
                 "transformer": "ms-plugin.structure-representation-3d",
                 "params": {
                   "type": {
@@ -347,8 +493,8 @@
                 "tags": [
                   "polymer"
                 ],
-                "ref": "YTYhIHtFdjtsbAe4r8Mlzg",
-                "version": "uRxgt3lBjFwWh10wbafBww"
+                "ref": "G-hGw10PE9-6AdXMLKCoDQ",
+                "version": "cP6qyEksFDxFxIexQ_jWnw"
               }
             ]
           }
@@ -383,9 +529,9 @@
             "mode": "perspective",
             "fov": 0.7853981633974483,
             "position": [
-              0.6149036865208098,
-              0.22672177560683973,
-              763.6604720787165
+              0.15535291900347048,
+              -2.8696558021134297,
+              877.2208643096245
             ],
             "up": [
               0,
@@ -393,12 +539,12 @@
               0
             ],
             "target": [
-              0.6149036865208098,
-              0.22672177560683973,
-              -0.1386138703958385
+              0.15535291900347048,
+              -2.8696558021134297,
+              0.0891253011923956
             ],
-            "radius": 292.2932558483245,
-            "radiusMax": 292.2932558483245,
+            "radius": 335.6637845201069,
+            "radiusMax": 335.6637845201069,
             "fog": 15,
             "clipFar": true,
             "minNear": 5,
@@ -626,7 +772,7 @@
               "staticMoving": true,
               "dynamicDampingFactor": 0.2,
               "minDistance": 5,
-              "maxDistance": 2922.932558483245,
+              "maxDistance": 3356.637845201069,
               "gestureScaleFactor": 1,
               "maxWheelDelta": 0.02,
               "bindings": {
@@ -941,7 +1087,7 @@
         },
         "interactivity": {
           "props": {
-            "granularity": "residue"
+            "granularity": "chainInstances"
           }
         },
         "structureFocus": {},

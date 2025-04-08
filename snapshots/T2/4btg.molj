@@ -1,16 +1,16 @@
 {
-  "timestamp": 1744110608982,
+  "timestamp": 1744110640424,
   "version": "4.12.1",
-  "current": "htZM0-ZYSUDVNCYjjHpodQ",
+  "current": "dW5xzsKg6DQIFajByCEphw",
   "playback": {
     "isPlaying": false,
     "nextSnapshotDelayInMs": 1500
   },
   "entries": [
     {
-      "timestamp": 1744110608982,
+      "timestamp": 1744110640423,
       "snapshot": {
-        "id": "htZM0-ZYSUDVNCYjjHpodQ",
+        "id": "dW5xzsKg6DQIFajByCEphw",
         "data": {
           "tree": {
             "transforms": [
@@ -19,7 +19,7 @@
                 "transformer": "build-in.root",
                 "params": {},
                 "ref": "-=root=-",
-                "version": "0PBw9I6fsBY2-JYgHFAQDA"
+                "version": "F1ZUQMh4ysr730nc90UyTg"
               },
               {
                 "parent": "-=root=-",
@@ -27,46 +27,46 @@
                 "params": {
                   "url": {
                     "kind": "url",
-                    "id": "SgALnuoPZajOvD6EoKTiqg",
-                    "url": "https://models.rcsb.org/4BTQ.bcif"
+                    "id": "nEcv1u-yKUX15TBUMCV5TQ",
+                    "url": "https://models.rcsb.org/4BTG.bcif"
                   },
-                  "label": "RCSB PDB: 4btq (bcif)",
+                  "label": "RCSB PDB: 4btg (bcif)",
                   "isBinary": true
                 },
                 "state": {
                   "isGhost": true
                 },
-                "ref": "BUSwxb_Ww1IwWAJBPxDFiQ",
-                "version": "B1GachFEkho9GvX5yKEo9g"
+                "ref": "-PkraGqoJkUg1BuqzGwA7w",
+                "version": "OGsY7q1zxeEoG417BdLQQA"
               },
               {
-                "parent": "BUSwxb_Ww1IwWAJBPxDFiQ",
+                "parent": "-PkraGqoJkUg1BuqzGwA7w",
                 "transformer": "ms-plugin.parse-cif",
                 "params": {},
                 "state": {
                   "isGhost": true
                 },
-                "ref": "GiD1sQgBasKgb7t6lhzcpg",
-                "version": "_GHWgLEeBN4TYuf6fd45_A"
+                "ref": "8giPlzciGQrScg6KfJ3MgQ",
+                "version": "IKgrGElFhhLWJTS092gnfw"
               },
               {
-                "parent": "GiD1sQgBasKgb7t6lhzcpg",
+                "parent": "8giPlzciGQrScg6KfJ3MgQ",
                 "transformer": "ms-plugin.trajectory-from-mmcif",
                 "params": {},
-                "ref": "YT9V6dxAWUoM6pDbzu5rSg",
-                "version": "b1RaAl8WdUnIFxqdQJl4Fw"
+                "ref": "36QpqJO0-3Y7ifQ-S2H1rg",
+                "version": "gNGGuZZ5TEB5d8-Qa1Lfqw"
               },
               {
-                "parent": "YT9V6dxAWUoM6pDbzu5rSg",
+                "parent": "36QpqJO0-3Y7ifQ-S2H1rg",
                 "transformer": "ms-plugin.model-from-trajectory",
                 "params": {
                   "modelIndex": 0
                 },
-                "ref": "BqKqpF9mKgy913gEgU4CbQ",
-                "version": "atXMgOL4_va3AxT2NidLvg"
+                "ref": "5PR2bqtkzCxKTGNx_Uiwfg",
+                "version": "Y1I-g9vmBY7KKSmX8Griew"
               },
               {
-                "parent": "BqKqpF9mKgy913gEgU4CbQ",
+                "parent": "5PR2bqtkzCxKTGNx_Uiwfg",
                 "transformer": "ms-plugin.custom-model-properties",
                 "params": {
                   "autoAttach": [],
@@ -93,11 +93,11 @@
                     }
                   }
                 },
-                "ref": "kmP6dwPXEkg2s8hs9Ng_gg",
-                "version": "ciyyAXACEVNJ605P0R6TxA"
+                "ref": "o88Yjgx6G2bBNpS06OQUig",
+                "version": "dboUy-3AyfySPmvRbyE4mQ"
               },
               {
-                "parent": "kmP6dwPXEkg2s8hs9Ng_gg",
+                "parent": "o88Yjgx6G2bBNpS06OQUig",
                 "transformer": "ms-plugin.structure-from-model",
                 "params": {
                   "type": {
@@ -108,11 +108,11 @@
                     }
                   }
                 },
-                "ref": "w3k_QNichFWnau7mLoKuUg",
-                "version": "d6RMtApoAO_BXii_BvIabg"
+                "ref": "yftPhWcp_nG-e0P-DhIklw",
+                "version": "vWqXhW79ZAcGtGILBZCBlA"
               },
               {
-                "parent": "w3k_QNichFWnau7mLoKuUg",
+                "parent": "yftPhWcp_nG-e0P-DhIklw",
                 "transformer": "ms-plugin.custom-structure-properties",
                 "params": {
                   "autoAttach": [],
@@ -216,11 +216,11 @@
                     }
                   }
                 },
-                "ref": "f6kxWKZ9K5XXCgsNdIR7ng",
-                "version": "dLmre5FUx7TOg8MNlru0jg"
+                "ref": "gV0k3SfbZAG7OsKqrdgg-A",
+                "version": "5350sA8tGm4UuzzP7sk0xQ"
               },
               {
-                "parent": "f6kxWKZ9K5XXCgsNdIR7ng",
+                "parent": "gV0k3SfbZAG7OsKqrdgg-A",
                 "transformer": "ms-plugin.structure-component",
                 "params": {
                   "type": {
@@ -233,11 +233,11 @@
                 "tags": [
                   "structure-component-static-polymer"
                 ],
-                "ref": "JI-90p59f_TIC0F9iIhPug",
-                "version": "NWXV42NKv2kmqg7tC7HvEg"
+                "ref": "KSRyYRRds_5yqUwAS4zxlg",
+                "version": "JJhTdK0X-OXCewP5tUg7VA"
               },
               {
-                "parent": "JI-90p59f_TIC0F9iIhPug",
+                "parent": "KSRyYRRds_5yqUwAS4zxlg",
                 "transformer": "ms-plugin.structure-representation-3d",
                 "params": {
                   "type": {
@@ -347,8 +347,8 @@
                 "tags": [
                   "polymer"
                 ],
-                "ref": "YTYhIHtFdjtsbAe4r8Mlzg",
-                "version": "uRxgt3lBjFwWh10wbafBww"
+                "ref": "BEF210IK1zElIzGQsdrAOg",
+                "version": "6Z0y16KdyKL2RoRqtff8RA"
               }
             ]
           }
@@ -383,9 +383,9 @@
             "mode": "perspective",
             "fov": 0.7853981633974483,
             "position": [
-              0.6149036865208098,
-              0.22672177560683973,
-              763.6604720787165
+              1.0189375611012021,
+              3.120216977185082,
+              666.4053642918859
             ],
             "up": [
               0,
@@ -393,12 +393,12 @@
               0
             ],
             "target": [
-              0.6149036865208098,
-              0.22672177560683973,
-              -0.1386138703958385
+              1.0189375611012021,
+              3.120216977185082,
+              -0.1429886330813399
             ],
-            "radius": 292.2932558483245,
-            "radiusMax": 292.2932558483245,
+            "radius": 255.0770115346237,
+            "radiusMax": 255.0770115346237,
             "fog": 15,
             "clipFar": true,
             "minNear": 5,
@@ -626,7 +626,7 @@
               "staticMoving": true,
               "dynamicDampingFactor": 0.2,
               "minDistance": 5,
-              "maxDistance": 2922.932558483245,
+              "maxDistance": 2550.7701153462367,
               "gestureScaleFactor": 1,
               "maxWheelDelta": 0.02,
               "bindings": {

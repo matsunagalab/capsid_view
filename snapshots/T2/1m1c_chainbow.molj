@@ -1,16 +1,16 @@
 {
-  "timestamp": 1744302265412,
+  "timestamp": 1744303584519,
   "version": "4.12.1",
-  "current": "ot7i38y5Euy5vDmHsmFi8Q",
+  "current": "H-Glq7_OFg4Q01FHfZWSzA",
   "playback": {
     "isPlaying": false,
     "nextSnapshotDelayInMs": 1500
   },
   "entries": [
     {
-      "timestamp": 1744302265411,
+      "timestamp": 1744303584517,
       "snapshot": {
-        "id": "ot7i38y5Euy5vDmHsmFi8Q",
+        "id": "H-Glq7_OFg4Q01FHfZWSzA",
         "data": {
           "tree": {
             "transforms": [
@@ -52,7 +52,11 @@
               {
                 "parent": "3qiV9YTueNoO1YxysvkMCw",
                 "transformer": "ms-plugin.trajectory-from-mmcif",
-                "params": {},
+                "params": {
+                  "loadAllBlocks": false,
+                  "blockHeader": "1M1C",
+                  "blockIndex": 0
+                },
                 "ref": "xmfo9O-lnRoXJAX4iFlBbw",
                 "version": "Dsg6kBYDrIVXWxrC7-ZfXA"
               },
@@ -83,6 +87,9 @@
                     "max_index": {
                       "value": 0
                     },
+                    "pdbe_structure_quality_report": {
+                      "serverUrl": "https://www.ebi.ac.uk/pdbe/api/validation/residuewise_outlier_summary/entry/"
+                    },
                     "rcsb_validation_report": {
                       "source": {
                         "name": "server",
@@ -90,6 +97,12 @@
                           "baseUrl": "https://files.rcsb.org/pub/pdb/validation_reports"
                         }
                       }
+                    },
+                    "mvs-is-mvs-model": {
+                      "isMvs": false
+                    },
+                    "mvs-annotations": {
+                      "annotations": []
                     }
                   }
                 },
@@ -213,6 +226,12 @@
                       "asaCutoff": 40,
                       "adjust": 14,
                       "tmdetDefinition": false
+                    },
+                    "mvs-custom-tooltips": {
+                      "tooltips": []
+                    },
+                    "mvs-annotation-tooltips": {
+                      "tooltips": []
                     }
                   }
                 },
@@ -476,9 +495,9 @@
             "mode": "perspective",
             "fov": 0.7853981633974483,
             "position": [
-              102.49981886938158,
-              -0.49476917868775777,
-              733.6165145476232
+              102.35790955290501,
+              0.7045389681446308,
+              822.8865307888043
             ],
             "up": [
               0,
@@ -486,11 +505,11 @@
               0
             ],
             "target": [
-              102.49981886938158,
-              -0.49476917868775777,
-              142.60205966043196
+              102.35790955290501,
+              0.7045389681446308,
+              144.00336571129
             ],
-            "radius": 226.17144017361287,
+            "radius": 259.79733978673903,
             "radiusMax": 473.7620491099396,
             "fog": 15,
             "clipFar": true,
@@ -557,7 +576,7 @@
             },
             "cameraClipping": {
               "far": true,
-              "radius": 52,
+              "radius": 45,
               "minNear": 5
             },
             "cameraResetDurationMs": 250,
@@ -1034,7 +1053,7 @@
         },
         "interactivity": {
           "props": {
-            "granularity": "residue"
+            "granularity": "chain"
           }
         },
         "structureFocus": {},

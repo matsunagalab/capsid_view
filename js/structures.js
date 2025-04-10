@@ -310,7 +310,7 @@ const structures = [
         url: 'https://files.rcsb.org/download/1VB4.pdb',
         format: 'pdb',
         tag: ['chainbow'],
-        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T1/1vb4_chainbow.molx', 
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T1/1vb4_chainbow.molj', 
     },
     {
         id: '5zju_chainbow',
@@ -318,7 +318,7 @@ const structures = [
         url: 'https://files.rcsb.org/download/5ZJU.pdb',
         format: 'pdb',
         tag: ['chainbow'],
-        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T1/5zju_chainbow.molx', 
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T1/5zju_chainbow.molj', 
     },
     {
         id: '1m1c_chainbow',
@@ -326,7 +326,7 @@ const structures = [
         url: 'https://files.rcsb.org/download/1M1C.pdb',
         format: 'pdb',
         tag: ['chainbow'],
-        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/1m1c_chainbow.molx', 
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/1m1c_chainbow.molj', 
     },
     {
         id: '6z8d_chainbow',
@@ -334,7 +334,7 @@ const structures = [
         url: 'https://files.rcsb.org/download/6Z8D.pdb',
         format: 'pdb',
         tag: ['chainbow'],
-        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/6z8d_chainbow.molx', 
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/6z8d_chainbow.molj', 
     },
     {
         id: '4btq_chainbow',
@@ -342,7 +342,7 @@ const structures = [
         url: 'https://files.rcsb.org/download/4BTQ.pdb',
         format: 'pdb',
         tag: ['chainbow'],
-        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btq_chainbow.molx', 
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btq_chainbow.molj', 
     },
     {
         id: '4btg_chainbow',
@@ -350,7 +350,7 @@ const structures = [
         url: 'https://files.rcsb.org/download/4BTG.pdb',
         format: 'pdb',
         tag: ['chainbow'],
-        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btg_chainbow.molx', 
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btg_chainbow.molj', 
     },
 ];
 

@@ -122,7 +122,7 @@ const structures = [
     },
     {
         id: '6z8d',
-        name: 'Picobirnavirus (3izx)',
+        name: 'Picobirnavirus (6z8d)',
         url: 'https://files.rcsb.org/download/6z8d.pdb',
         format: 'pdb',
         tag: ['T2'],

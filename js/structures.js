@@ -121,6 +121,14 @@ const structures = [
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/3izx.molj', 
     },
     {
+        id: '6z8d',
+        name: 'Picobirnavirus (3izx)',
+        url: 'https://files.rcsb.org/download/6z8d.pdb',
+        format: 'pdb',
+        tag: ['T2'],
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/6z8d.molj', 
+    },
+    {
         id: '6r7m',
         name: 'Tobacco mosaic virus (6r7m)',
         url: 'https://files.rcsb.org/download/6R7M.pdb',

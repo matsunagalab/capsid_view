@@ -352,6 +352,38 @@ const structures = [
         tag: ['chainbow'],
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btg_chainbow.molj', 
     },
+    {
+        id: '7zts_10mer_surface',
+        name: '7ZTS + 10-mer (surface)',
+        url: 'https://files.rcsb.org/download/7ZTS.cif',
+        format: 'cif',
+        tag: ['open_LBC'],
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/7zts_10mer_surface.molx', 
+    },
+    {
+        id: '7zts_10mer_cartoon',
+        name: '7ZTS + 10-mer (cartoon)',
+        url: 'https://files.rcsb.org/download/7ZTS.cif',
+        format: 'cif',
+        tag: ['open_LBC'],
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/7zts_10mer_cartoon.molx', 
+    },
+    {
+        id: '7zts_7qwx_10mer_surface',
+        name: '7ZTS + 7QWX + 10-mer (surface)',
+        url: 'https://files.rcsb.org/download/7ZTS.cif',
+        format: 'cif',
+        tag: ['open_LBC'],
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/7zts_7qwx_10mer_surface.molx', 
+    },
+    {
+        id: '7zts_7qwx_10mer_cartoon',
+        name: '7ZTS + 7QWX + 10-mer (cartoon)',
+        url: 'https://files.rcsb.org/download/7ZTS.cif',
+        format: 'cif',
+        tag: ['open_LBC'],
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/7zts_7qwx_10mer_cartoon.molx', 
+    },
 ];
 
 export {structures};

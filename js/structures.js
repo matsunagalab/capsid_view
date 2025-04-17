@@ -384,6 +384,14 @@ const structures = [
         tag: ['open_LBC'],
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/7zts_7qwx_10mer_cartoon.molx', 
     },
+    {
+        id: '1m1c_B_scaled',
+        name: '1M1C subunit B (scaled)',
+        url: 'https://files.rcsb.org/download/1M1C.pdb',
+        format: 'pdb',
+        tag: ['scaled'],
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/1m1c_B_scaled.molx', 
+    },
 ];
 
 export {structures};

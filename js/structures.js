@@ -398,7 +398,7 @@ const structures = [
         url: 'https://files.rcsb.org/download/4BTQ.pdb',
         format: 'pdb',
         tag: ['scaled'],
-        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btq_B_scaled.molx', 
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btq_A_scaled.molx', 
     },
 ];
 

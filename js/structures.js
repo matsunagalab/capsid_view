@@ -392,6 +392,14 @@ const structures = [
         tag: ['scaled'],
         snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/1m1c_B_scaled.molx', 
     },
+    {
+        id: '4btq_A_scaled',
+        name: '4BTQ subunit A (scaled)',
+        url: 'https://files.rcsb.org/download/4BTQ.pdb',
+        format: 'pdb',
+        tag: ['scaled'],
+        snapshot: 'https://raw.githubusercontent.com/matsunagalab/capsid_view/main/snapshots/T2/4btq_B_scaled.molx', 
+    },
 ];
 
 export {structures};
